@@ -2,6 +2,8 @@
 
 Onion domains.
 
+<strong>Updated version: https://quitaxd.online/onion</strong>
+
 |Site Name|Onion Domain|
 |-|-|
 |Brave Search|http://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion|
