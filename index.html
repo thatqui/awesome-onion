@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onion Sites Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .light-theme {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .nord-dark {
+            background-color: #2e3440;
+            color: #d8dee9;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: inherit;
+            color: inherit;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            background-color: #f2f2f2;
+        }
+        .nord-dark th, .nord-dark td {
+            background-color: #3b4252;
+            color: #d8dee9;
+        }
+        input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            width: 60%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            color: #333;
+        }
+        .nord-dark input[type="text"] {
+            background-color: #434c5e;
+            color: #d8dee9;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .nord-dark button {
+            background-color: #81a1c1;
+            color: #2e3440;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <h1>Onion Sites Search</h1>
+    <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for site names..." class="light-theme">
+    <button onclick="changeTheme()" class="theme-button">Toggle Nord Dark Theme</button>
+    <table id="sitesTable">
+        <thead>
+            <tr>
+                <th>Site Name</th>
+                <th>Onion Domain</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brave Search</td>
+                <td>http://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion</td>
+            </tr>
+            <tr>
+                <td>DuckDuckGo</td>
+                <td>http://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion</td>
+            </tr>
+            <tr>
+                <td>4get</td>
+                <td>http://4getwebfrq5zr4sxugk6htxvawqehxtdgjrbcn2oslllcol2vepa23yd.onion</td>
+            </tr>
+            <tr>
+                <td>Proton</td>
+                <td>http://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion</td>
+            </tr>
+            <tr>
+                <td>RiseUp</td>
+                <td>http://5gdvpfoh6kb2iqbizb37lzk2ddzrwa47m6rpdueg2m656fovmbhoptqd.onion</td>
+            </tr>
+            <tr>
+                <td>Sonar Messenger</td>
+                <td>http://sonarmsng5vzwqezlvtu2iiwwdn3dxkhotftikhowpfjuzg7p3ca5eid.onion</td>
+            </tr>
+            <tr>
+                <td>CockMail</td>
+                <td>http://xdkriz6cn2avvcr2vks5lvvtmfojz2ohjzj4fhyuka55mvljeso2ztqd.onion</td>
+            </tr>
+            <tr>
+                <td>1337x.to</td>
+                <td>http://l337xdarkkaqfwzntnfk5bmoaroivtl6xsbatabvlb52umg6v3ch44yd.onion</td>
+            </tr>
+            <tr>
+                <td>Onion Links</td>
+                <td>http://s4k4ceiapwwgcm3mkb6e4diqecpo7kvdnfr5gg7sph7jjppqkvwwqtyd.onion</td>
+            </tr>
+            <tr>
+                <td>Ahmia</td>
+                <td>http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion</td>
+            </tr>
+            <tr>
+                <td>Tech Learning Collective</td>
+                <td>http://lpiyu33yusoalp5kh3f4hak2so2sjjvjw5ykyvu2dulzosgvuffq6sad.onion</td>
+            </tr>
+            <tr>
+                <td>negative zero</td>
+                <td>http://5dh74bfmqtxzepmonhobawjsngq7sehvt5ymnxqjiqv477fx3qovjgyd.onion</td>
+            </tr>
+            <tr>
+                <td>QubesOS</td>
+                <td>http://2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion</td>
+            </tr>
+            <tr>
+                <td>Tor Project</td>
+                <td>http://2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion</td>
+            </tr>
+            <tr>
+                <td>Tor Paste</td>
+                <td>http://torpastezr7464pevuvdjisbvaf4yqi4n7sgz7lkwgqwxznwy5duj4ad.onion</td>
+            </tr>
+            <tr>
+                <td>Shadow Wiki</td>
+                <td>http://zsxjtsgzborzdllyp64c6pwnjz5eic76bsksbxzqefzogwcydnkjy3yd.onion</td>
+            </tr>
+            <tr>
+                <td>Disroot</td>
+                <td>http://j4dhkkxfcsvzvh3p5djkmuehhgd6t6l7wmzih6b4ss744hegwkiae7ad.onion</td>
+            </tr>
+            <tr>
+                <td>Disroot Mail</td>
+                <td>http://mdlwkwn2nhzzuymmyr5mjyoqppoyp46k4remaliu2zrmkayl5yfeh7ad.onion</td>
+            </tr>
+            <tr>
+                <td>Disroot Cloud</td>
+                <td>http://3rhtbo7bb3o5qvx2iyirppxxtpwnlxkavdyjdckmuzh2uohibignufqd.onion</td>
+            </tr>
+            <tr>
+                <td>Disroot Cryptpad</td>
+                <td>http://jatqcuw3s2earcfzphl224ua3i7j2n76vid4vegguiaaavr5z46q4aad.onion</td>
+            </tr>
+            <tr>
+                <td>Disroot Pads</td>
+                <td>http://b6mttjczryfoyz2go65hyjl5k6xfqqacpvz3ameurvraijxg5sv2z2id.onion</td>
+            </tr>
+            <tr>
+                <td>Disroot Bin</td>
+                <td>http://n63ite5off46lfh7qei4uhkvttrgvpve7ag3kwftlqkxo4o5mu7l4cqd.onion</td>
+            </tr>
+            <tr>
+                <td>Disroot Lufi</td>
+                <td>http://e2olmnzdp5d72z3xs2ugftvwgxywgbgipofa443zizolbgxoj5m46vyd.onion</td>
+            </tr>
+            <tr>
+                <td>Disroot SearXNG</td>
+                <td>http://bzg6fq2cbzrp52z5xkmggsiqhfc4zb4ouq3g7y6b2yfdnuud6yajpyqd.onion</td>
+            </tr>
+            <tr>
+                <td>Disroot Jitsi</td>
+                <td>http://oubguq76ii5svwyplbheorayf2nmoxy7inyd43a24adq24sy7jahjvyd.onion</td>
+            </tr>
+            <tr>
+                <td>Disroot Git</td>
+                <td>http://kgtz2pmmov5jfvn3z4mqryffjnnw6krzrgxxoyaqhqckjrr4pckyhsqd.onion</td>
+            </tr>
+            <tr>
+                <td>Disroot Translate</td>
+                <td>http://3veapfc2xpg4ouflejs2r2y3z6nkrylqkx25ruxtqpznxeyfycvhhrqd.onion</td>
+            </tr>
+            <tr>
+                <td>Invidious</td>
+                <td>http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion</td>
+            </tr>
+            <tr>
+                <td>Invidious</td>
+                <td>http://ng27owmagn5amdm7l5s3rsqxwscl5ynppnis5dqcasogkyxcfqn7psid.onion</td>
+            </tr>
+            <tr>
+                <td>Invidious</td>
+                <td>http://invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion</td>
+            </tr>
+            <tr>
+                <td>Invidious</td>
+                <td>http://inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion</td>
+            </tr>
+            <tr>
+                <td>Invidious</td>
+                <td>http://inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion</td>
+            </tr>
+            <tr>
+                <td>Invidious</td>
+                <td>http://nerdvpneaggggfdiurknszkbmhvjndks5z5k3g5yp4nhphflh3n3boad.onion</td>
+            </tr>
+            <tr>
+                <td>Reddit</td>
+                <td>http://reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function searchTable() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("sitesTable");
+            tr = table.getElementsByTagName("tr");
+
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0]; // Site Name sütunu
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        function changeTheme() {
+            var body = document.body;
+            var currentTheme = body.classList.contains('nord-dark') ? 'nord-dark' : 'light-theme';
+            var newTheme = currentTheme === 'light-theme' ? 'nord-dark' : 'light-theme';
+
+            // Toggle theme class on body
+            body.classList.remove(currentTheme);
+            body.classList.add(newTheme);
+
+            // Save theme preference to localStorage
+            localStorage.setItem('theme', newTheme);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var savedTheme = localStorage.getItem('theme');
+            var body = document.body;
+
+            if (savedTheme === 'nord-dark') {
+                body.classList.add('nord-dark');
+            } else {
+                body.classList.add('light-theme'); // Default theme if no preference is set
+            }
+        });
+    </script>
+</body>
+</html>
